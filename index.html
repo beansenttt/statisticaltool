@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Statistical Calculator</h1>
+        <p>Enter your data set:</p>
+
+        <input type="text" id="dataset" placeholder="e.g., 10, 20, 30, 40, 50">
+        <label for="dataset">Dataset (comma-separated):</label>
+
+        <input type="text" id="weights" placeholder="e.g., 1, 2, 3, 4, 5">
+        <label for="weights">Weights (for Weighted Mean, optional):</label>
+
+        <button id="calculate">Calculate</button>
+
+        <div class="output">
+            <h2>Results</h2>
+            <p id="meanResult">Mean: </p>
+            <p id="medianResult">Median: </p>
+            <p id="modeResult">Mode: </p>
+            <p id="varianceResult">Variance: </p>
+            <p id="stdDevResult">Standard Deviation: </p>
+            <p id="weightedMeanResult">Weighted Mean: </p>
+        </div>
+
+        <p>Enter a second dataset for correlation:</p>
+        <input type="text" id="datasetX" placeholder="e.g., 10, 20, 30, 40, 50">
+        <label for="datasetX">Dataset X (comma-separated):</label>
+        <input type="text" id="datasetY" placeholder="e.g., 15, 25, 35, 45, 55">
+        <label for="datasetY">Dataset Y (comma-separated):</label>
+        <button id="calculateCorrelation">Calculate Correlation</button>
+        <p id="correlationResult">Correlation Coefficient: </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
